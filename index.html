@@ -10,7 +10,8 @@
     <title>Celebrity Match</title>
   </head>
   <body>
-    <nav class="navbar navbar-inverse">
+    <!-- navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
           <a class="navbar-brand" href="#">Celebrity Match</a>
@@ -22,6 +23,99 @@
         </div>
       </div>
     </nav>
+    <!-- jumbotron -->
+    <div class="container">
+      <header class="lead">
+        <div class="well well-lg">
+          <h4>Fill out the questionnaire below to see what Celebrity you match up with...</h4>
+        </div>
+      </header>
 
+    <!-- questionnaire div -->
+      <div class="row">
+        <div class="col-md-6">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h2 class="panel-title">Match Questionnaire</h2>
+            </div>
+            <div class="panel-body">
+              <form id="formOne">
+                <div class="form-group">
+                  <label for="name1">Name</label>
+                  <input id="name1" class="form-control" type="text">
+                </div>
+                <div class="form-group">
+                  <label for="age1">Age</label>
+                  <input id="age1" class="form-control" type="text">
+                </div>
+                <p><strong>Gender</strong></p>
+                <select class="form-control" id="gender">
+                  <option>Male</option>
+                  <option>Female</option>
+                </select>
+                <hr>
+                <p>Do you like music more than movies?</p>
+                  <div  class="radio">
+                    <label>
+                      <input type="radio" name="1" value="yes">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="1" value="no">
+                      No
+                    </label>
+                  </div>
+                  <p>Do you like movies more than music?</p>
+                  <div  class="radio">
+                    <label>
+                      <input type="radio" name="2" value="yes">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="2" value="no">
+                      No
+                    </label>
+                  </div>
+                <button type="submit" class="btn">Show my match!</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h2 class="panel-title">Match Result!!</h2>
+            </div>
+            <div class="panel-body">
+              <div id="resultText">
+                <p>Hello <span class="name1"></span>, looks like you match best with <span class="celeb"></span>. Hope it lasts!!</p>
+              </div>
+              <div class="selena">
+                <img src="img/selena.jpg" alt="selenaImg">
+              </div>
+              <div class="zo">
+                <img src="img/zo.jpg" alt="zoImg">
+              </div>
+              <div class="zach">
+                <img src="img/zach.jpg" alt="zachImg">
+              </div>
+              <div class="mark">
+                <img src="img/mark.jpg" alt="markImg">
+              </div>
+              <div class="justin">
+                <img src="img/justin.jpg" alt="justinImg">
+              </div>
+              <div class="jen">
+                <img src="img/jen.jpg" alt="jenImg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
